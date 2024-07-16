@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* General */
+html {
+    font-size: 15   px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    background: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Text block */
+.mainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+}
+
+.thin {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+}
+
+.fat {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.mainText p {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9rem; 
+    margin-top: .5rem;
+}
+
+
+/* Blocks */
+.blocks {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+
+/* Block */
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    gap: 2rem;
+    box-shadow: 0 0 0.5rem hsl(229, 6%, 66%);
+}
+
+.block h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+.block p {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9rem; 
+}
+
+.foto {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Colors */
+.cyan {
+    border-top: 0.3rem solid hsl(180, 62%, 55%);
+    background: hsl(0, 0%, 100%);
+    grid-row: 2 / span 2;
+    grid-column: 1;
+}
+
+.red {
+    border-top: 0.3rem solid hsl(0, 78%, 62%);
+    background: hsl(0, 0%, 100%);
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+
+.orange {
+    border-top: 0.3rem solid hsl(34, 97%, 64%);
+    background: hsl(0, 0%, 100%);
+    grid-row: 3 / span 2;
+    grid-column: 2;
+}
+
+.blue {
+    border-top: 0.3rem solid hsl(212, 86%, 64%);
+    background: hsl(0, 0%, 100%);
+    grid-row: 2 / span 2;
+    grid-column: 3;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 3rem 0;
+    }
+    
+    .mainText {
+        width: 100%;
+    }
+
+    .blocks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
